@@ -240,7 +240,7 @@ const Canvas = ({ selectedProject, setSelectedProject }: CanvasProps) => {
             }
 
             const allLines = [...lines, ...fkConstraints];
-            return `CREATE TABLE ${node.data.tableName} (${allLines.join(',\n')});`;
+            return `CREATE TABLE ${node.data.tableName} (\n${allLines.join(',\n')}\n);`;
         }).join("\n\n");
 
         setGeneratedCode(code);

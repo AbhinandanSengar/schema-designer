@@ -1,4 +1,4 @@
-import { Share } from "lucide-react";
+import { Share, Users } from "lucide-react";
 import Dropdown from "./Dropdown";
 import { Button } from "./ui/button";
 import { useState, type SetStateAction } from "react";
@@ -45,8 +45,8 @@ const Header = ({ setSelectedProject }: HeaderProps) => {
 
       <div className="flex gap-2 items-center">
         <Button size="lg" variant="outline" className="cursor-pointer gap-2">
-          <Share className="w-4 h-4" />
-          <span>Share</span>
+          <Users className="w-4 h-4" />
+          <span>Invite</span>
         </Button>
 
         <Button
